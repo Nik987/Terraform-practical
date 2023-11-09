@@ -27,6 +27,6 @@ resource "aws_instance" "my_instance" {
 
   tags = {
     Name = "test"
-    Secret = data.vault_kv_secret_v2.example.data["name"]
+    Secret = data.vault_kv_secret_v2.example.data["name"]  //name = change it according to the key name which is present in vault.
   }
 }
